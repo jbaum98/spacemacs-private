@@ -8,8 +8,8 @@
 * Description
 This modifies the default behavior of the Spacemacs Java layer to
   - not use Eclim
-  - compile files automatically using `javac` as you type
-  - automatically set the compile command to `javac <current-file>`
+  - compile files automatically using =javac= as you type
+  - automatically set the compile command to =javac <current-file>=
 
 * Install
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
