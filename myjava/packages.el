@@ -33,6 +33,7 @@
   '(
     flycheck
     (eclim :excluded t)
+    java-snippets
     )
   "The list of Lisp packages required by the myjava layer.
 
@@ -73,7 +74,6 @@ Each entry is either:
   "Forms a classpath string out of a list of paths, PATHS."
   (concat "" (mapconcat 'identity paths ":") ""))
 
-
 (defun myjava/post-init-flycheck ()
   "Configure flycheck for Java."
   (flycheck-define-checker java/javac
@@ -105,5 +105,7 @@ Each entry is either:
   (add-to-list 'flycheck-checkers 'java/javac)
   (add-to-list 'flycheck-checkers 'java/javac-in-place)
   )
+
+(defun myjava/init-java-snippets () ())
 
 ;;; packages.el ends here
